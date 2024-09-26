@@ -1,6 +1,6 @@
 # js-tutorial
 
-// console.log("Abhimanyu") -> print out the value.
+console.log("Abhimanyu") -> print out the value.
 
 # Variables
 to store an infromation.
