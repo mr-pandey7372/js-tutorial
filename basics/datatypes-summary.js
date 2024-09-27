@@ -22,7 +22,10 @@ const bigNumber = 34539872157893721n  // to make it big integer
 
 // types: Array, Objects, Functions
 
+// ************************ Array ************************ //
 const heros = ["shaktiman", "naagraj", "doga"]
+
+
 // ************************ Object ************************ //
 let myObj = {
     name:"abhimanyu",
