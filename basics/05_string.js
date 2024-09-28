@@ -59,8 +59,4 @@ console.log(contentString.charCodeAt(2));  // return the character/asci code at 
 // Using codePointAt()
 console.log(contentString.codePointAt(4));   // A non-negative integer representing the code point value of the character at the given index
 
-// Using concat()
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
-const array3 = array1.concat(array2);
-lo
+
