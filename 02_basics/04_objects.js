@@ -23,8 +23,36 @@ const regularUser = {
 
 const obj1 = {1:"a", 2:"b"}
 const obj2 = {3:"a", 4:"b"}
+const obj5 = {5:"a", 6:"b"}
+
 
 // const obj3 = {obj1, obj2}
-const obj4 = Object.assign(obj1, obj2)
-console.log(obj4);
+const obj4 = Object.assign({}, obj1, obj2,obj5)    // merge the array obj2 into obj1 , giving '{}' is good practice
+// console.log(obj4);
 
+// use mostly spread operator ...
+const obj6 = {...obj1, ...obj2, ...obj5}
+console.log(obj6);
+
+ 
+const users = [                      // database representation
+    {                                     // database representation
+        id: 1,                               // database representation
+        email : "h@gmail.com"                  // database representation  
+    },                                      // database representation
+    {                                         // database representation
+    },                                     // database representation
+    {                                // database representation
+    },                               // database representation
+    {                               // database representation
+    },                            // database representation
+]
+
+users[1].email
+console.log(tinderUser);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));     
+console.log(Object.entries(tinderUser));    // converts every key-value into arrays
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // to check whether that the property is existing or not
