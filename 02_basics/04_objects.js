@@ -32,7 +32,7 @@ const obj4 = Object.assign({}, obj1, obj2,obj5)    // merge the array obj2 into 
 
 // use mostly spread operator ...
 const obj6 = {...obj1, ...obj2, ...obj5}
-console.log(obj6);
+// console.log(obj6);
 
  
 const users = [                      // database representation
@@ -49,10 +49,43 @@ const users = [                      // database representation
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));     
-console.log(Object.entries(tinderUser));    // converts every key-value into arrays
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));     
+// console.log(Object.entries(tinderUser));    // converts every key-value into arrays
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // to check whether that the property is existing or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // to check whether that the property is existing or not
+
+
+// ************************************ De-Structuring ************************************ //
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructure: "hitesh"
+}
+
+// course.courseInstructure
+// another way to extract the value
+const {courseInstructure} = course       
+console.log(courseInstructure);
+
+const {courseInstructure:instructor} = course   // to shorten the name {courseInstructure: instructor}
+console.log(instructor);
+
+
+// ************************************ API ************************************ //
+
+// In object format
+// {
+//     "name":"hitesh",
+//     "coursename": "js hindi",             // in json keys and values are string
+//     "price": "free"
+// }
+
+// In array format
+[
+    {},
+    {},
+    {}
+]
