@@ -55,3 +55,35 @@ function loginUserMessage(username) {
 // console.log(loginUserMessage(""));
 console.log(loginUserMessage());    // undefined
 
+
+// **************** rest operator **************** //
+function calculateCardPrice(...num1) {      // "..."  are called spread operator and also rest operator also
+    return num1
+}
+console.log(calculateCardPrice(200, 400, 500));
+
+// declaring function and object
+const user = {
+    username : "hitesh",
+    price : 199
+}
+function handleObject(anyobject) {
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    
+}
+
+// handleObject(user)
+handleObject({
+    username : "sam",
+    price : 399
+})
+
+// arrays 
+const myNewArray = [200, 400, 100, 600]    // array function 
+
+function returnSecondValue(getArray) {   // return function
+    return getArray
+}
+
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
